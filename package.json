@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for booking site",
   "main": "index.js",
+  "homepage": "https://kabirmaan.github.io/booking-website",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
@@ -11,7 +12,8 @@
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "deploy": "gh-pages -d public"
   },
   "author": "Jonas",
   "license": "ISC",
